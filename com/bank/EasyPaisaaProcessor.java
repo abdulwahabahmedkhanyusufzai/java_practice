@@ -16,4 +16,9 @@ public class EasyPaisaaProcessor implements PaymentProcessor {
     public void printReceipt() {
         System.out.println("EasyPaisa Receipt: Payment Successful.");
     }
+
+    @Override
+    public PaymentMethod getPaymentMethod() {
+        return PaymentMethod.EASYPAISA;
+    }
 }
