@@ -31,6 +31,11 @@ public class BankAccount {
         }
     }
 
+    @Override
+    public String toString() {
+        return "BankAccount [accountHolder=" + accountHolder + ", balance=" + balance + "]";
+    }
+
     // 5. Getter: To see the balance safely
     public void displayBalance() {
         System.out.println(accountHolder + "'s Current Balance: " + balance);
